@@ -1,0 +1,298 @@
+[
+    {
+        "code": "0001",
+        "name": "Brewer's Storehouse No. 4 double IPA, 6 pack",
+        "price": "9.99",
+        "category": "alcohol",
+        "image": "https://production-endpoint.azureedge.net/images/6CQ3ICHI6TFJAC1GF0QJ0C0/d114704c-3865-4422-89b3-3aa323841a10/349227_500x500_500x500.tif.jpg",
+        "rating": "4.8"
+    },
+    {
+        "code": "0002",
+        "name": "Bronzen Schild Belgian tripel ale, 4 pack",
+        "price": "12.99",
+        "category": "alcohol",
+        "image": "https://production-endpoint.azureedge.net/images/6CS3GD9G61FJAC1GF0QJ0C0/cf0782cc-f4e3-4730-b22b-73b5e4d56eeb/388500_500x500_500x500.tif.jpg",
+        "rating": "4.9"
+    },
+    {
+        "code": "0003",
+        "name": "Craft Explorers Blue Ridge lager, 6 pack",
+        "price": "7.99",
+        "category": "alcohol",
+        "image": "https://production-endpoint.azureedge.net/images/64Q30D1M6LFJAC1GF0QJ0C0/f6725de7-c664-4e01-9f97-24c1de7928b2/140465_500x500_500x500.tif.jpg",
+        "rating": "4.9"
+    },
+    {
+        "code": "0004",
+        "name": "Craft Explorers hop blast IPA, 6 pack",
+        "price": "7.99",
+        "category": "alcohol",
+        "image": "https://production-endpoint.azureedge.net/images/6CQ3CDHN71FJAC1GF0QJ0C0/cdb9a06e-dae6-4467-8f2a-a091c3c15c1a/346678_500x500_500x500.tif.jpg",
+        "rating": "4.7"
+    },
+    {
+        "code": "0005",
+        "name": "Czech lager",
+        "price": "2.99",
+        "category": "alcohol",
+        "image": "https://production-endpoint.azureedge.net/images/6SP38C9IBSQJ0C3O6KO30/7e987f08-e439-43e8-8e6a-ab7e907c5775/72412_500x500_500x500.tif.jpg",
+        "rating": "4.9"
+    },
+    {
+        "code": "0006",
+        "name": "Perlenbacher hefeweizen, 6 pack",
+        "price": "12.99",
+        "category": "alcohol",
+        "image": "https://production-endpoint.azureedge.net/images/6CR3ACHH6DFJAC1GF0QJ0C0/f1c56f22-5958-47f5-8d70-8cf18bccb2d2/365213_500x500_500x500.tif.jpg",
+        "rating": "4.8"
+    },
+    {
+        "code": "0007",
+        "name": "Trailgazer session ale, 6 pack",
+        "price": "7.99",
+        "category": "alcohol",
+        "image": "https://production-endpoint.azureedge.net/images/6CQ36D1P69FJAC1GF0QJ0C0/4c65de3f-4a0c-4396-a5a8-6453f63cfc42/343492_500x500_500x500.tif.jpg",
+        "rating": "3.7"
+    },
+    {
+        "code": "0008",
+        "name": "Bud Light® seltzer variety pack, 12 pack",
+        "price": "15.48",
+        "category": "alcohol",
+        "image": "https://production-endpoint.azureedge.net/images/6CR30D1L75FJAC1GF0QJ0C0/225f1ac1-066d-4b9d-b9ec-b8c03009813b/360459_500x500_500x500.tif.jpg",
+        "rating": "4.2"
+    },
+    {
+        "code": "0009",
+        "name": "blueberry muffin",
+        "price": "1.19",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6SQJ8DHN69FJAC1GF0QJ0C0/5d3f41be-39dd-4d7f-add5-6062861c6dfe/754672_500x500_500x500.tif.jpg",
+        "rating": "4.6"
+    },
+    {
+        "code": "0010",
+        "name": "chocolate vanilla twist",
+        "price": "0.79",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6ORJ0DPN6DFJAC1GF0QJ0C0/1d7a5008-db89-4314-a1fa-dd4aff3bc424/670773_500x500_500x500.tif.jpg",
+        "rating": "4.1"
+    },
+    {
+        "code": "0011",
+        "name": "crownfield protein granola",
+        "price": "5.99",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6SO3CCHH6HFJAC1GF0QJ0C0/608f435a-5915-44fc-81b7-eef2190037bb/706214_500x500_500x500.tif.jpg",
+        "rating": "3.8"
+    },
+    {
+        "code": "0012",
+        "name": "maple pecan pastry",
+        "price": "0.99",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6OR3IDPM6DFJAC1GF0QJ0C0/f68795e4-fe24-479f-93a8-038137309dd0/669763_500x500_500x500.tif.jpg",
+        "rating": "4.7"
+    },
+    {
+        "code": "0013",
+        "name": "mini chocolate croissant",
+        "price": "0.59",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6ORJADHG75FJAC1GF0QJ0C0/c0faf918-dde5-4be2-88cf-4be81fd90d09/675609_500x500_500x500.tif.jpg",
+        "rating": "4.2"
+    },
+    {
+        "code": "0014",
+        "name": "raisin custard swirl",
+        "price": "0.99",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6SP3IC9H69FJAC1GF0QJ0C0/1fa71df2-370e-4dc9-81af-88d64efcf4ad/729112_500x500_500x500.tif.jpg",
+        "rating": "4.9"
+    },
+    {
+        "code": "0015",
+        "name": "ciabatta bread",
+        "price": "1.99",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6SP3IC9L6PFJAC1GF0QJ0C0/dd1f93fd-e8fb-422f-a5f2-d359ff5e3d04/729156_500x500_500x500.tif.jpg",
+        "rating": "4.9"
+    },
+    {
+        "code": "0016",
+        "name": "classic baguette",
+        "price": "1.99",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6OR3IDPM6PFJAC1GF0QJ0C0/0bb5f977-b023-44c5-8774-5d264df78e7f/669766_500x500_500x500.tif.jpg",
+        "rating": "4,8"
+    },
+    {
+        "code": "0017",
+        "name": "farmer's bread",
+        "price": "3.99",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6OR3IDPN6HFJAC1GF0QJ0C0/1e734fb4-1c36-42ec-8d9a-831c452f275b/669774_500x500_500x500.tif.jpg",
+        "rating": "5.0"
+    },
+    {
+        "code": "0018",
+        "name": "multi-seed croissant",
+        "price": "0.89",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6SQ38D1G75FJAC1GF0QJ0C0/d3da1262-980b-49be-9b95-bcba259bb1d0/744409_500x500_500x500.tif.jpg",
+        "rating": "4.7"
+    },
+    {
+        "code": "0019",
+        "name": "German sourdough bread",
+        "price": "3.99",
+        "category": "bakery",
+        "image": "https://production-endpoint.azureedge.net/images/6OR3IDPN65FJAC1GF0QJ0C0/2de67021-3834-4b9f-ae67-479a6b6d3509/669771_500x500_500x500.tif.jpg",
+        "rating": "4.9"
+    },
+    {
+        "code": "0020",
+        "name": "Eggo® frozen buttermilk waffles",
+        "price": "2.97",
+        "category": "frozen food",
+        "image": "https://production-endpoint.azureedge.net/images/6OSJGDHKBSQJ0C3O6KO30/eeb9d681-7873-42ce-a84d-8854acb6fd59/69864_500x500_500x500.tif.jpg",
+        "rating": "4.6"
+    },
+    {
+        "code": "0021",
+        "name": "frozen blueberry waffles",
+        "price": "2.49",
+        "category": "frozen food",
+        "image": "https://production-endpoint.azureedge.net/images/6GS3EDHK6LFJAC1GF0QJ0C0/69506291-f327-4d88-a015-20817170891b/487645_500x500_500x500.tif.jpg",
+        "rating": "4.0"
+    },
+    {
+        "code": "0022",
+        "name": "frozen breakfast bowl, meat lovers",
+        "price": "2.43",
+        "category": "frozen food",
+        "image": "https://production-endpoint.azureedge.net/images/6KO3IE1M69FJAC1GF0QJ0C0/7640b2ed-fee0-432e-9dd9-1cf86260b23d/509862_500x500_500x500.tif.jpg",
+        "rating": "4.4"
+    },
+    {
+        "code": "0023",
+        "name": "frozen breakfast bowl, sausage & gravy",
+        "price": "2.43",
+        "category": "frozen food",
+        "image": "https://production-endpoint.azureedge.net/images/6OPJIE1J71FJAC1GF0QJ0C0/8fb7efaf-9fbf-4826-892a-00da03ec8a70/639838_500x500_500x500.tif.jpg",
+        "rating": "4.6"
+    },
+    {
+        "code": "0024",
+        "name": "frozen buttermilk pancakes",
+        "price": "3.74",
+        "category": "frozen food",
+        "image": "https://production-endpoint.azureedge.net/images/6KPJ0E9J6LFJAC1GF0QJ0C0/05b96f68-d67f-4654-973f-59f8051250d6/530935_500x500_500x500.tif.jpg",
+        "rating": "4.8"
+    },
+    {
+        "code": "0025",
+        "name": "frozen French toast sticks, double cinnamon",
+        "price": "3.16",
+        "category": "frozen food",
+        "image": "https://production-endpoint.azureedge.net/images/6SO32D9L6LFJAC1GF0QJ0C0/52d8b2f0-0702-4193-a85b-4d0faf85981d/701555_500x500_500x500.tif.jpg",
+        "rating": "4.8"
+    },
+    {
+        "code": "0026",
+        "name": "frozen English muffin",
+        "price": "5.78",
+        "category": "frozen food",
+        "image": "https://production-endpoint.azureedge.net/images/6OOJ8CHK6HFJAC1GF0QJ0C0/b1fafa96-53f1-491d-9f3e-4cd7904c432d/614244_500x500_500x500.tif.jpg",
+        "rating": "5.0"
+    },
+    {
+        "code": "0027",
+        "name": "Acme™ Nova smoked salmon",
+        "price": "7.99",
+        "category": "seafood",
+        "image": "https://production-endpoint.azureedge.net/images/6SQ38DPG71FJAC1GF0QJ0C0/3dab7ffb-ffbd-4af6-9ad7-deda00344e37/744708_500x500_500x500.tif.jpg",
+        "rating": "4.8"
+    },
+    {
+        "code": "0028",
+        "name": "Chilean Atlantic skinless salmon fillet portions",
+        "price": "12.99",
+        "category": "seafood",
+        "image": "https://production-endpoint.azureedge.net/images/6OR3GCHJ6LFJAC1GF0QJ0C0/77f1dbe0-a0c8-4471-bdcb-e1d3db6cd7db/668235_500x500_500x500.tif.jpg",
+        "rating": "4.9"
+    },
+    {
+        "code": "0029",
+        "name": "Fish Market Atlantic salmon",
+        "price": "12.99",
+        "category": "seafood",
+        "image": "https://production-endpoint.azureedge.net/images/6KS32C1M6PFJAC1GF0QJ0C0/cefbcff0-c8fb-4a6c-b6b7-7c964092703f/581066_500x500_500x500.tif.jpg",
+        "rating": "4.3"
+    },
+    {
+        "code": "0030",
+        "name": "Fish Market cedar plank Chilean Atlantic salmon, skin on",
+        "price": "11.99",
+        "category": "seafood",
+        "image": "https://production-endpoint.azureedge.net/images/6OQJ6C9N75FJAC1GF0QJ0C0/fafc144d-815a-4ce8-bcd3-e2517e5d9cb9/653179_500x500_500x500.tif.jpg",
+        "rating": "4.5"
+    },
+    {
+        "code": "00031",
+        "name": "Fish Market Chilean salmon whole fillet",
+        "price": "5.99",
+        "category": "seafood",
+        "image": "https://production-endpoint.azureedge.net/images/6SP36D1H6TFJAC1GF0QJ0C0/5116a82c-2a5e-4b01-b172-29e9723ffa4b/723417_500x500_500x500.tif.jpg",
+        "rating": "3.1"
+    },
+    {
+        "code": "0032",
+        "name": "Fish Market Chilean Atlantic salmon fillet, Mediterranean herb",
+        "price": "11.89",
+        "category": "seafood",
+        "image": "https://production-endpoint.azureedge.net/images/6KPJ0E9L6TFJAC1GF0QJ0C0/46cf9f75-2c87-4b3b-a2ee-7498612f7a13/530957_500x500_500x500.tif.jpg",
+        "rating": "4.1"
+    },
+    {
+        "code": "0033",
+        "name": "applewood smoked bacon",
+        "price": "4.88",
+        "category": "meat and poultry",
+        "image": "https://production-endpoint.azureedge.net/images/6KPJ4CHM6TFJAC1GF0QJ0C0/37f9b5d9-b89e-41df-9a10-18f0f82ccea6/532267_500x500_500x500.tif.jpg",
+        "rating": "4.8"
+    },
+    {
+        "code": "0034",
+        "name": "applewood smoked thick cut bacon, family size",
+        "price": "6.29",
+        "category": "meat and poultry",
+        "image": "https://production-endpoint.azureedge.net/images/6GRJ2DPI75FJAC1GF0QJ0C0/746805d7-baf6-47ba-a3af-231596fa5838/471729_500x500_500x500.tif.jpg",
+        "rating": "4.8"
+    },
+    {
+        "code": "0035",
+        "name": "Butterball® lower sodium turkey bacon",
+        "price": "3.89",
+        "category": "meat and poultry",
+        "image": "https://production-endpoint.azureedge.net/images/6GPJACHP6PFJAC1GF0QJ0C0/3f4934a0-d735-4026-bf35-6d0410ba0cd1/435296_500x500_500x500.tif.jpg",
+        "rating": "4.2"
+    },
+    {
+        "code": "0036",
+        "name": "fully cooked bacon",
+        "price": "3.44",
+        "category": "meat and poultry",
+        "image": "https://production-endpoint.azureedge.net/images/6GR3GDHK6LFJAC1GF0QJ0C0/fd28c6cc-3d01-41b9-bd72-4ebdd8ee5f39/468645_500x500_500x500.tif.jpg",
+        "rating": "4.9"
+    },
+    {
+        "code": "0037",
+        "name": "Jamestown Brand sliced bacon",
+        "price": "2.89",
+        "category": "meat and poultry",
+        "image": "https://production-endpoint.azureedge.net/images/64O38C1M75FJAC1GF0QJ0C0/cbdca57c-0159-42ee-b523-58b797a403ee/104069_500x500_500x500.tif.jpg",
+        "rating": "4.9"
+    }
+]

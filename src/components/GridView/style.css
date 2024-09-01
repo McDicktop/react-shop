@@ -1,0 +1,133 @@
+.shop_wrapper {
+    margin-bottom: 140px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.grid_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 10px;
+}
+
+
+.product_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.product_wrapper:hover {
+    margin: -1px;    
+    border: 1px solid rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+.product_info {
+    background-color: white;
+}
+
+
+.product_image {
+    padding: 10px;
+    object-fit: cover;
+    background-color: white;
+}
+
+.product_price {
+    color: #005ba2;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 8px 0 8px 8px;
+}
+
+.product_name {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 40px;
+}
+
+.product_rating {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.btn_buy {    
+    border: none;
+    border-top: 1px solid rgb(212, 212, 212);
+    background-color: white;
+    height: 40px;
+    color: #005ba2;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn_buy:hover {
+    color: white;
+    background-color: #005ba2;
+}
+
+
+.quantity_container {
+    display: flex;
+    justify-content: end;
+    margin: 10px 60px 0 0;
+    column-gap: 4px;
+}
+
+
+.filter_elems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    border-radius: 24px;
+    padding-left: 10px;
+    padding-right: 10px;    
+    background-color: #d0d5dd;
+    color: #494949;
+}
+
+.select {
+    border: 1px solid #c2c2c2;
+    border-radius: 24px;
+    outline: none; 
+    background-color: #f0f2f5;
+    cursor: pointer;
+    padding: 2px;
+    margin-left: 4px;
+}
+
+.grid_navigation{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 40px;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: fit-content;
+
+    background-color: rgb(237, 244, 252);
+}
+
+
+.avalibleProd{
+    width: 230px;
+    color: #535353;
+    margin: 0 0 10px 60px ;
+    font-size: 17px;
+}
+
+.imgAd {
+    width: calc(100% - 120px);
+    margin-left: 60px;
+}
