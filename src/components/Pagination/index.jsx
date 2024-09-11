@@ -4,12 +4,13 @@ import {
     useImperativeHandle,
     forwardRef,
     useContext,
-} from "react";
-import { LengthContext } from "../../context/lengthContext";
-import "./style.css";
+} from "react"
+import PropTypes from 'prop-types'
+import { LengthContext } from "../../context/lengthContext"
+import "./style.css"
 
 const Pagination = forwardRef(function Pagination({ handlePage }, ref) {
-    const [{ length, changeLength }] = useContext(LengthContext);
+    const [{ length }] = useContext(LengthContext);
     const [page, setPage] = useState(0);
     const amount = import.meta.env.VITE_AMOUNT_PER_PAGE;
     const pages = Math.ceil(length / amount);
@@ -93,5 +94,9 @@ const Pagination = forwardRef(function Pagination({ handlePage }, ref) {
         </div>
     );
 });
+
+Pagination.propTypes = {
+    handlePage: PropTypes.func.isRequired
+}
 
 export default Pagination;

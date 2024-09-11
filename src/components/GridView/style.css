@@ -1,65 +1,72 @@
-.shop_wrapper {
-    margin-bottom: 140px;
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
 .grid_wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 10px;
+    grid-auto-flow: dense;
+    margin: 0 60px 140px 60px;
 }
-
 
 .product_wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    background-color: var(--clr-bg-alt);
 }
 
-
 .product_wrapper:hover {
-    margin: -1px;    
-    border: 1px solid rgb(212, 212, 212);
+    margin: -1px;
+    border: 1px solid var(--clr-border);
     cursor: pointer;
 }
 
-.product_info {
-    background-color: white;
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    position: sticky;
+    width: calc(100% - 116px);
+    margin: 0 0 4px 58px;
+    top: 62px;
+
+    background-color: var(--clr-bg);
+    z-index: 10;
 }
+
 
 
 .product_image {
     padding: 10px;
     object-fit: cover;
-    background-color: white;
 }
 
 .product_price {
-    color: #005ba2;
+    color: var(--clr-primary);
     font-size: 28px;
     font-weight: 700;
     margin: 8px 0 8px 8px;
 }
 
 .product_name {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--clr-fg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 8px;
     margin-right: 8px;
     height: 40px;
 }
 
 .product_rating {
+    color: var(--clr-fg);
     text-align: center;
     margin-bottom: 8px;
 }
 
-.btn_buy {    
+.btn_buy {
     border: none;
-    border-top: 1px solid rgb(212, 212, 212);
-    background-color: white;
+    border-top: 1px solid var(--clr-border);
+    background-color: var(--clr-bg-alt);
     height: 40px;
-    color: #005ba2;
+    color: var(--clr-primary);
     font-size: 17px;
     font-weight: 700;
     cursor: pointer;
@@ -67,43 +74,29 @@
 }
 
 .btn_buy:hover {
-    color: white;
-    background-color: #005ba2;
+    color: var(--clr-white);
+    background-color: var(--clr-on-hover);
 }
-
-
-.quantity_container {
-    display: flex;
-    justify-content: end;
-    margin: 10px 60px 0 0;
-    column-gap: 4px;
-}
-
 
 .filter_elems {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 32px;
-    border-radius: 24px;
-    padding-left: 10px;
-    padding-right: 10px;    
-    background-color: #d0d5dd;
-    color: #494949;
+    padding: 0 10px 0 10px;
+    color: var(--clr-fg);    
 }
 
 .select {
-    border: 1px solid #c2c2c2;
+    border: 1px solid var(--clr-border);
     border-radius: 24px;
-    outline: none; 
-    background-color: #f0f2f5;
+    outline: none;
+
+    color: var(--clr-text);
+    background-color: var(--clr-bg-input);
     cursor: pointer;
-    padding: 2px;
-    margin-left: 4px;
+
+    width: 110px;
 }
 
-.grid_navigation{
+.grid_navigation {
     display: flex;
     flex-direction: row;
 
@@ -115,19 +108,204 @@
 
     width: 100%;
     height: fit-content;
-
-    background-color: rgb(237, 244, 252);
 }
 
 
-.avalibleProd{
+.avalibleProd {
     width: 230px;
-    color: #535353;
-    margin: 0 0 10px 60px ;
+    color: var(--clr-text);
     font-size: 17px;
+
+
 }
 
 .imgAd {
     width: calc(100% - 120px);
     margin-left: 60px;
+}
+
+
+.nav_search {
+    width: 246px;
+    position: relative;
+
+    margin-left: auto;
+}
+
+.nav_search::before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 6px;
+
+    height: 16px;
+    width: 16px;
+
+    content: "";
+
+    background-image: url('	https://img.icons8.com/?size=512&id=132&format=png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav_search>input {
+    width: calc(100% - 80px);
+    padding: 0 0px 0 26px;
+
+    line-height: 22px;
+    color: var(--clr-text);
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    border-radius: 24px 0 0 24px;
+    border: 1px solid var(--clr-border);
+    background-color: var(--clr-bg-input);
+
+    box-sizing: border-box;
+    outline: none;
+}
+
+.nav_search>button {
+    color: var(--clr-text);
+    line-height: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    text-align: center;
+
+    width: 70px;
+
+    border-radius: 0 24px 24px 0;
+    border: 1px solid var(--clr-bg-search);
+
+    box-sizing: border-box;
+
+    background-color: var(--clr-bg-search);
+    cursor: pointer;
+}
+
+.like {
+    width: fit-content;
+    position: relative;
+    margin-left: auto;
+    padding: 6px 6px 0 6px;
+    color: var(--clr-like)
+}
+
+/* Favorites styles */
+
+.fav-button {
+    padding-top: 4px;
+    color: var(--clr-fg);
+    transition: transform .1s ease-in-out;
+    cursor: pointer;
+}
+
+.fav-button:active {
+    transform: translateY(-5px);
+}
+
+.fav-active>svg {
+    fill: var(--clr-fg);
+}
+
+
+
+/* GridAd styles */
+
+.grid-ad {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--clr-bg-alt);
+
+    padding: 10px;
+    border: 1px solid var(--clr-border);
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.grid-ad__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-ad__p {
+    margin: 4px;
+    padding: 2px 4px 0 4px;
+
+    color: var(--clr-fg);
+    font-weight: bold;
+    font-size: 12px;
+
+    background-color: var(--clr-bg);
+}
+
+.grid-ad__name {
+    font-size: 20px;
+    align-self: flex-start;
+    color: var(--clr-text);
+}
+
+.grid-ad__description {
+    margin: 10px 0 10px;
+    font-size: 14px;
+    text-align: justify;
+    color: var(--clr-text);
+}
+
+.grid-ad__btn {
+    width: 120px;
+    padding: 4px 0 4px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: var(--clr-white);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.grid-ad__btn:hover {
+    background-color: var(--clr-primary);
+}
+
+
+/* ToggleBtn styles */
+
+.btn {
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: .9rem;
+    font-weight: bold;
+
+    letter-spacing: -1px;
+    text-transform: lowercase;
+    transition: transform .1s ease-in-out;
+    background-color: var(--clr-bg);
+    border: none;
+
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+.btn--icon:hover,
+.btn--icon:focus {
+    color: var(--clr-primary);
+}
+
+.btn--icon:active {
+    transform: translateY(-5px);
+}
+
+.btn--icon>svg {
+    fill: var(--clr-fg);
 }

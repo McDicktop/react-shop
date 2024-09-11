@@ -1,6 +1,7 @@
-import {  useState } from "react"
+import { useState } from "react"
+import PropTypes from 'prop-types';
 
-function Search({filterSearch}) {
+function Search({ filterSearch }) {
     const [search, setSearch] = useState('');
 
     return (
@@ -11,16 +12,20 @@ function Search({filterSearch}) {
                 className="nav_search__input"
                 id="nav_search__input"
                 value={search}
-                onChange={(e) => setSearch(e.target.value) }
+                onChange={(e) => setSearch(e.target.value)}
             />
             <button
                 className="nav_search__button"
-                onClick={() => filterSearch(search) }
+                onClick={() => filterSearch(search)}
             >
                 Search
             </button>
         </div>
     );
+}
+
+Search.propTypes = {
+    filterSearch: PropTypes.func.isRequired,
 }
 
 export default Search;

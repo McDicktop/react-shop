@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import {
     useEffect,
     useContext,
@@ -6,12 +7,23 @@ import {
     forwardRef,
     useImperativeHandle,
 } from "react";
-import GridItem from "../GridItem";
+
+import GridAd from "./GridAd";
+import GridItem from "./GridItem";
 import Filter from "./Filter";
+import Search from "./Search";
+import ToggleBtn from "./ToggleBtn";
+import FavBtn from "./FavBtn";
+
 import { FilterContext } from "../../context/filterContext";
 import { LengthContext } from "../../context/lengthContext";
+import { FavoritesContext } from "../../context/favoritesContext";
+
 import shopContent from "../../config/shop.json";
+import ads from "../../config/ads.json";
 import getProducts from "../utils/getProducts";
+import scrollToTop from "../utils/scrollToTop";
+
 import "./style.css";
 
 const GridView = forwardRef(function GridView({ setFirstPage }, ref) {
@@ -19,6 +31,7 @@ const GridView = forwardRef(function GridView({ setFirstPage }, ref) {
         changePage(newPage) {
             setPage(newPage);
         },
+
         filterSearch(searchArg) {
             if (searchArg !== filter.search) {
                 setSearch(searchArg);
@@ -26,14 +39,26 @@ const GridView = forwardRef(function GridView({ setFirstPage }, ref) {
         },
     }));
 
+    function filterSearch(search) {
+        ref.current.filterSearch(search);
+    }
+
     const [{ filter, setSearch }] = useContext(FilterContext);
     const [{ changeLength }] = useContext(LengthContext);
+    const [{ favorites }] = useContext(FavoritesContext);
 
     const products = getProducts(shopContent);
+    const adsArray = getProducts(ads);
+
     const amount = import.meta.env.VITE_AMOUNT_PER_PAGE;
+    const adAmount = import.meta.env.VITE_AD_AMOUNT;
 
     const [filteredData, setFilteredData] = useState(products);
     const [page, setPage] = useState(1);
+    const [isFavOn, setIsFavOn] = useState(false);
+    const [favData, setFavData] = useState(
+        favorites.map((el) => products.find((product) => product.code === el))
+    );
 
     const filterProducts = useCallback(
         (productsToFilter) => {
@@ -84,33 +109,100 @@ const GridView = forwardRef(function GridView({ setFirstPage }, ref) {
     );
 
     useEffect(() => {
+        if (isFavOn) {
+            setIsFavOn(false);
+        }
+
         const filtered = filterProducts(products),
             founded = findProducts(filtered, filter.search),
             sorted = sortProducts(founded);
 
         setFilteredData(sorted);
-        setPage(1);
         changeLength(sorted.length);
         setFirstPage();
+        scrollToTop();
+        if (isFavOn) {
+            setIsFavOn(false);
+        }
     }, [filter]);
+
+    useEffect(() => {
+        if (isFavOn) {
+            setFavData(
+                favorites.map((el) =>
+                    products.find((product) => product.code === el)
+                )
+            );
+    
+            changeLength(favData.length);
+            setFirstPage();
+            return;
+        }
+        changeLength(filteredData.length)
+    }, [isFavOn, favorites]);
 
     return (
         <>
-            <Filter products={products} />
-            <p className="avalibleProd">{`There are ${filteredData.length} products avalible`}</p>
-            <div className="shop_wrapper">
-                <ul className="grid_wrapper">
-                    {filteredData
+            <div className="filters">
+                <p className="avalibleProd">{`${
+                    isFavOn
+                        ? "Your favorites:"
+                        : `There are ${filteredData.length} products avalible`
+                }`}</p>
+                <Search filterSearch={filterSearch} />
+                <Filter products={products} />
+                <ToggleBtn />
+                <FavBtn setIsFavOn={setIsFavOn} isFavOn={isFavOn} />
+            </div>
+
+            <ul className="grid_wrapper">
+                {!isFavOn &&
+                    filteredData
                         .slice(amount * (page - 1), amount * page)
                         .map((el, index) => {
                             return (
-                                <GridItem key={`item_${index}`} product={el} />
+                                <>
+                                    {index === +adAmount && (
+                                        <GridAd
+                                            key={`ad_${index}`}
+                                            obj={
+                                                adsArray[
+                                                    Math.floor(
+                                                        Math.random() *
+                                                            adsArray.length
+                                                    )
+                                                ]
+                                            }
+                                        />
+                                    )}
+                                    <GridItem
+                                        key={`item_${index}`}
+                                        product={el}
+                                    />
+                                </>
                             );
                         })}
-                </ul>
-            </div>
+
+                {isFavOn &&
+                    favData
+                        .slice(amount * (page - 1), amount * page)
+                        .map((el, index) => {
+                            return (
+                                <>
+                                    <GridItem
+                                        key={`item_${index}`}
+                                        product={el}
+                                    />
+                                </>
+                            );
+                        })}
+            </ul>
         </>
     );
 });
+
+GridView.propTypes = {
+    setFirstPage: PropTypes.func.isRequired,
+};
 
 export default GridView;

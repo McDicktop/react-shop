@@ -1,10 +1,18 @@
-import { useState, createContext } from "react";
+import { useState, createContext, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const BasketContext = createContext();
 
 const BasketProvider = ({ children }) => {
-    const [basket, setBasket] = useState([]);
+    const [basket, setBasket] = useState(() => {
+        const savedBasket = localStorage.getItem('basket');
+
+        return savedBasket ? JSON.parse(savedBasket) : [];
+    });
+
+    useEffect(() => {
+        localStorage.setItem('basket', JSON.stringify(basket));
+    }, [basket])
 
     const addToBasket = (item) => {
         setBasket([...basket, { ...item, amount: 1 }]);

@@ -7,6 +7,7 @@ function Carousel() {
 
     return (
         <InfiniteCarousel
+            dots={true}
             arrows={false}
             sidesOpacity={0}
             slidesToScroll={1}
@@ -14,7 +15,7 @@ function Carousel() {
             scrollOnDevice={true}
             autoCycle={true}
             cycleInterval={5000}
-            animationDuration={500}
+            animationDuration={250}
         >
             {urls.map((el, index) => {
                 return (

@@ -10,10 +10,13 @@ const useBasketClick = () => {
 
     useEffect(() => {
         const handleClickOutside = (event) => {
+            console.log(event.target)
             if (
                 basketRef.current &&
                 !basketRef.current.contains(event.target) &&
-                event.target !== document.querySelector(".cart_div")
+                event.target !== document.querySelector(".cart_div") &&
+                event.target.className !== "btn_buy" &&
+                event.target.className !== "toCart"
             ) {
                 setIsBasketVisible(false);
             }
